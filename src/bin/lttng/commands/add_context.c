@@ -74,6 +74,8 @@ enum context_type {
 	CONTEXT_IP           = 12,
 	CONTEXT_PERF_CPU_COUNTER = 13,
 	CONTEXT_PERF_THREAD_COUNTER = 14,
+	CONTEXT_CALLSTACK_KERNEL = 15,
+	CONTEXT_CALLSTACK_USER = 16,
 };
 
 /*
@@ -218,6 +220,8 @@ const struct ctx_opts {
 	{ "vppid", CONTEXT_VPPID },
 	{ "hostname", CONTEXT_HOSTNAME },
 	{ "ip", CONTEXT_IP },
+	{ "callstack-kernel", CONTEXT_CALLSTACK_KERNEL },
+	{ "callstack-user", CONTEXT_CALLSTACK_USER },
 
 	/* Perf options */
 
